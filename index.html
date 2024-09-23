@@ -7,11 +7,7 @@
 </head>
 <body>
 
-
-
-
     <h1>hi</h1>
-
 
 
     <script>
@@ -61,9 +57,9 @@
 
     // Plnoletost
 
-    let vek = Number(prompt("Zadej cislo:"));
+    let vek = Number(prompt("Zadej vek:"));
 
-    if (vek > 18) {
+    if (vek >= 18) {
         alert('Jste plnolety.')
     }
     else if (vek < 16 && vek < 18) {
@@ -83,14 +79,11 @@
     // Vypsani vsech jmen v arrayi
 
     const array = ['Benjamin', 'Sebastian', 'Pepicek', 'Honzicek'];
-
     array.forEach(element => {
         alert(element);
     });
 
     
-
-
     // Abecedni poradi jmen
 
     const array2 = array.sort();
@@ -124,12 +117,26 @@
     jmeno: "Jan Feláček",
     vek: 30,
     predstaveni() {
-        alert('Ahoj' )
+        alert('Ahoj, jmenuju se' + this.jmeno + ' a je mi ' + vek + ' let.' )
     }
     };
 
-    //Ukol 6.1
-    //Ukol 6.2
+    //Model auta
+
+
+    const auto = {
+        znacka = 'Skoda',
+        model = 'Octavia',
+        rok = 2017
+    }
+
+    alert('Auto' + auto.znacka + auto.model + 'bylo vyrobeno v roce ' + rok);
+
+
+
+    //Knihy
+
+    const books = 
 
 
 
