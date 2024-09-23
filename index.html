@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <h1>hi</h1>
+
+
+
+    <script>
+
+
+    // Jmeno
+    let jmeno = prompt("Zadejte své jméno:");
+    alert(`Ahoj, ${jmeno}!`);
+
+    // Soucet cisel
+    let cislo1 = Number(prompt("Zadejte první číslo:"));
+    let cislo2 = Number(prompt("Zadejte druhé číslo:"));
+
+    let soucet = cislo1 + cislo2;
+    alert('Soucet je: ' + soucet);
+
+    // Porovnani cisel (bez uzivatelskeho inputu)
+
+    function compare(x, y) {
+
+        if (x < y) {
+            alert(y + " je vetsi nez " + x);
+        }
+
+        else if (y < x) {
+            alert(y + " je vetsi nez " + x);
+        }
+
+        else {
+            alert('Cisla jsou stejna');
+        }
+
+    }
+
+    compare(6, 6);
+
+
+    // Sude-liche cislo
+    let cislo = Number(prompt("Zadej cislo:"));
+
+    if (cislo % 2 == 0) {
+        alert('Cislo je sude.')
+    }
+    else {
+        alert('Cislo je liche.')
+    }
+
+    // Plnoletost
+
+    let vek = Number(prompt("Zadej cislo:"));
+
+    if (vek > 18) {
+        alert('Jste plnolety.')
+    }
+    else if (vek < 16 && vek < 18) {
+        alert('Uzivateli je 15 az 17 let')
+    }
+    else {
+        alert('Uzivateli je mene nez 15 let.')
+    }
+
+
+    //Vypsani cisel od 1 do 100 pres alert()
+
+    for (let i = 1; i <= 100; i++) {
+    //alert(i);
+}
+
+    // Vypsani vsech jmen v arrayi
+
+    const array = ['Benjamin', 'Sebastian', 'Pepicek', 'Honzicek'];
+
+    array.forEach(element => {
+        alert(element);
+    });
+
+    
+
+
+    // Abecedni poradi jmen
+
+    const array2 = array.sort();
+    array2.forEach(element => {
+        alert(element);
+    });
+
+
+    
+    //Ukol 4.2
+
+    // Custom pozdrav pres funkci greet()
+
+    function greet(jmeno) {
+        alert('Zdravim, ' + jmeno + ", doufam, že se ti daří.")
+    }
+
+    greet(Honza);
+
+    // Array cisel, sortovani vsech prvku od nejmensiho po nejvetsi
+
+    const numbers = [5, 55, 1, 6, 7, 2, 4, 3, 5];
+    alert(numbers.sort());
+
+
+
+
+    //Ukol 6
+
+    const osoba = {
+    jmeno: "Jan Feláček",
+    vek: 30,
+    predstaveni() {
+        alert('Ahoj' )
+    }
+    };
+
+    //Ukol 6.1
+    //Ukol 6.2
+
+
+
+    //Ukol 7
+    //Ukol 7.1
+    //Ukol 7.2
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
